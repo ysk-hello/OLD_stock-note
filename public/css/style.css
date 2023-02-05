@@ -1,0 +1,56 @@
+a {
+  text-decoration: none;
+}
+#calendar-table th {
+  height: 30px;
+  width: 60px;
+  text-align: center;
+}
+#calendar-table td {
+  height: 100px;
+  width: 60px;
+}
+#calendar-table .today {
+  background-color: orange !important;
+}
+#calendar-table th:nth-of-type(1), #calendar-table td:nth-of-type(1) {
+  color: red;
+}
+#calendar-table th:nth-of-type(7), #calendar-table td:nth-of-type(7) {
+  color: blue;
+}
+#calendar-table .holiday {
+  color: red;
+}
+#this-month {
+  text-align: center;
+}
+#edit-button, #delete-button {
+  width: 6em;
+}
+#form {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 80px;
+  grid-row-gap: 10px;
+}
+#stockNameLabel {
+  grid-column: 1 / 2;
+}
+#stockTextLabel {
+  grid-column: 1 / 2;
+}
+#stockName {
+  grid-column: 2 / 3;
+}
+#stockText {
+  grid-column: 2 / 5;
+}
+#submitButton {
+  grid-column: 4 / 5;
+}
+button {
+  width: 5em;
+}
+#current-month {
+  display: inline;
+}
