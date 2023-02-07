@@ -28,5 +28,10 @@ Route::post('/article/update', [App\Http\Controllers\ArticleController::class, '
 // 削除
 Route::delete('/article/{article}', [App\Http\Controllers\ArticleController::class, 'destroy']);
 
+// 検索
+Route::get('/article/search', [App\Http\Controllers\ArticleController::class, 'search'])->name('search');
+Route::post('/article/search', [App\Http\Controllers\ArticleController::class, 'search']);
+
+// 認証
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\ArticleController::class, 'index'])->name('home');

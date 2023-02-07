@@ -54,3 +54,16 @@ button {
 #current-month {
   display: inline;
 }
+#searchForm {
+  display: grid;
+  grid-template-columns: 100px 300px 80px;
+}
+#searchTextLabel {
+  grid-column: 1 / 2;
+}
+#searchText {
+  grid-column: 2 / 3;
+}
+#searchButton {
+  grid-column: 3 / 4;
+}

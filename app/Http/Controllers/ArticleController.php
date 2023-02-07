@@ -87,4 +87,11 @@ class ArticleController extends Controller
 
         return redirect('/');
     }
+
+    public function search(Request $request){
+        // あいまい検索
+        $articles = Article::where('text', 'like', '%' . $request->search_text . '%')->get();
+
+        return view('article_search', ['articles' => $articles]);
+    }
 }
