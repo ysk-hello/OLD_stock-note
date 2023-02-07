@@ -91,6 +91,14 @@ return [
             'prefix_indexes' => true,
         ],
 
+        'testing' => [
+            'driver' => 'mysql',
+            'host' => 'mysql',
+            'port' => 3306,
+            'database' => 'stock_note',
+            'username' => 'root',
+            'password' => 'root',
+        ],
     ],
 
     /*
